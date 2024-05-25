@@ -20,24 +20,24 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "a0"
-  ui[1]: "a1"
-  ui[2]: "a2"
-  ui[3]: "a3"
-  ui[4]: "b0"
-  ui[5]: "b1"
-  ui[6]: "b2"
-  ui[7]: "b3"
+  ui[0]: "A"
+  ui[1]: "B"
+  ui[2]: ""
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: "ena"
+  ui[6]: "rst_n"
+  ui[7]: "clk"
 
   # Outputs
-  uo[0]: "s0"
-  uo[1]: "s1"
-  uo[2]: "s2"
-  uo[3]: "s3"
+  uo[0]: "S"
+  uo[1]: "C4"
+  uo[2]: ""
+  uo[3]: ""
   uo[4]: ""
   uo[5]: ""
   uo[6]: ""
-  uo[7]: "c4"
+  uo[7]: ""
 
   # Bidirectional pins
   uio[0]: ""
