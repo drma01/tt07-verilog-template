@@ -28,7 +28,6 @@ pinout:
   ui[5]: "b1"
   ui[6]: "b2"
   ui[7]: "b3"
-  ui[8]: "clk"
 
   # Outputs
   uo[0]: "s0"
