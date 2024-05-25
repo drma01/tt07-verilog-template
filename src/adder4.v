@@ -1,4 +1,4 @@
-module tt_um_adder4( 
+module adder4( 
     input wire [3:0] A,
     input wire [3:0] B,
     output wire [3:0] S,
