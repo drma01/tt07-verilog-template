@@ -9,11 +9,11 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+Riječ je o 4-bitnom zbrajalu.
 
 ## How to test
 
-Explain how to use your project
+Izaberu se dva broja u binarom obliku i zbroje se.
 
 ## External hardware
 
