@@ -1,6 +1,7 @@
 module tt_um_adder4( 
     input [3:0] A,
     input [3:0] B,
+    input clk,
     output [3:0] S,
     output C4
     );
