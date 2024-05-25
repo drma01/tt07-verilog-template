@@ -2,7 +2,7 @@ module tt_um_adder4(
     input wire [3:0] A,
     input wire [3:0] B,
     output wire [3:0] S,
-    output wire C4
+    output wire C4,
     input  wire       ena,      // always 1 when the design is powered, so you can ignore it
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
