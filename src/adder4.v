@@ -1,4 +1,4 @@
-module four_bit_adder( 
+module tt_um_adder4( 
     input [3:0] A,
     input [3:0] B,
     output [3:0] S,
