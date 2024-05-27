@@ -32,14 +32,3 @@ module tt_um_adder4 (
     assign uo_out[7]=C4;
     
 endmodule
-
-module my_full_adder( input A,
-       input B,
-       input CIN,
-       output S,
-       output COUT
-       );
-       assign S = A^B^CIN;
-       assign COUT = (A&B) | (CIN&(A^B));
-
-endmodule
