@@ -15,30 +15,30 @@ project:
   
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:     
-    - "project.v"
+    - "tt_um_adder4.v"
     - "adder4.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "A"
-  ui[1]: "B"
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  ui[0]: "A0"
+  ui[1]: "A1"
+  ui[2]: "A2"
+  ui[3]: "A3"
+  ui[4]: "B0"
+  ui[5]: "B1"
+  ui[6]: "B2"
+  ui[7]: "B3"
 
   # Outputs
-  uo[0]: "S"
-  uo[1]: "C4"
-  uo[2]: ""
-  uo[3]: ""
+  uo[0]: "S0"
+  uo[1]: "S1"
+  uo[2]: "S2"
+  uo[3]: "S3"
   uo[4]: ""
   uo[5]: ""
   uo[6]: ""
-  uo[7]: ""
+  uo[7]: "C4"
 
   # Bidirectional pins
   uio[0]: ""
