@@ -19,30 +19,14 @@ module tt_um_adder4 (
   // All output pins must be assigned. If not used, assign to 0.
     assign uo_out[6:4] = 0;  // Example: ou_out is the sum of ui_in and uio_in
     assign uio_out = 0;
-  assign uio_oe  = 0;
-  adder4 tt_um_adder4(
-      .A (ui_in[3:0]),
-      .B (ui_in[7:4]),
-      .S (uo_out[3:0]),
-      .C4 (uo_out[7])
+    assign uio_oe  = 0;
+    wire C1,C2,C3;
+    my_full_adder fa0 (ui_in[0],ui_in[4],0, uo_out[0],C1);
+    my_full_adder fa1 (ui_in[1],ui_in[5],C1,uo_out[1],C2);
+    my_full_adder fa2 (ui_in[2],ui_in[6],C2,uo_out[2],C3);
+    my_full_adder fa3 (ui_in[3],ui_in[7],C3,uo_out[3],uo_out[7]
   );
     
-endmodule
-module adder4( 
-    input wire [3:0] A,
-    input wire [3:0] B,
-    output wire [3:0] S,
-    output wire C4
-    
-    );
-    wire C1,C2,C3;
-   
-  my_full_adder fa0 (A[0],B[0],0,  S[0],C1);
-    my_full_adder fa1 (A[1],B[1],C1,S[1],C2);
-    my_full_adder fa2 (A[2],B[2],C2,S[2],C3);
-    my_full_adder fa3 (A[3],B[3],C3,S[3],C4);
-
-
 endmodule
 
 module my_full_adder( input A,
