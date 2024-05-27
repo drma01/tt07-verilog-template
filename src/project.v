@@ -22,8 +22,8 @@ module tt_um_adder4 (
   assign uio_oe  = 0;
     adder4 myadder(
       .A (ui_in[3:0]),
-      .B (ui_in[3:0]),
+      .B (ui_in[7:4]),
       .S (uo_out[3:0]),
-      .C4 (uo_out[1])
+      .C4 (uo_out[4])
     );
 endmodule
