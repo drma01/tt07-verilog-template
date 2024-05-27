@@ -20,15 +20,16 @@ module tt_um_adder4 (
     assign uo_out = 0;  // Example: ou_out is the sum of ui_in and uio_in
     assign uio_out = 0;
     assign uio_oe  = 0;
-    wire C1,C2,C3, S0, S1, S2, S3;
+    wire C1,C2,C3, C4, S0, S1, S2, S3;
     my_full_adder fa0 (ui_in[0],ui_in[4],0, S0,C1);
     my_full_adder fa1 (ui_in[1],ui_in[5],C1,S1,C2);
     my_full_adder fa2 (ui_in[2],ui_in[6],C2,S2,C3);
-    my_full_adder fa3 (ui_in[3],ui_in[7],C3,S3,uo_out[7]);
+    my_full_adder fa3 (ui_in[3],ui_in[7],C3,S3, C4);
     assign uo_out[0]=S0;
     assign uo_out[1]=S1;
     assign uo_out[2]=S2;
     assign uo_out[3]=S3;
+    assign uo_out[7]=C4;
     
 endmodule
 
