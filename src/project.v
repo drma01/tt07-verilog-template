@@ -20,7 +20,7 @@ module tt_um_adder4 (
     assign uo_out[6:4] = 0;  // Example: ou_out is the sum of ui_in and uio_in
     assign uio_out = 0;
   assign uio_oe  = 0;
-  adder4 myadder(
+  adder4 tt_um_adder4(
       .A (ui_in[3:0]),
       .B (ui_in[7:4]),
       .S (uo_out[3:0]),
